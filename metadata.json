@@ -1,0 +1,6 @@
+{
+  "name": "Bombay Flavours: Mumbai Food Trails",
+  "description": "An editorial culinary gazette exploring Mumbai's iconic Irani cafés, nocturnal street food gallis, coastal seafood dens, and hidden heritage spots.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
