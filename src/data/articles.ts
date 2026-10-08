@@ -1,4 +1,8 @@
 import { BlogArticle } from '../types/blog';
+import heroImg from '../assets/images/hero_mumbai_food_trail_1791176802606.jpg';
+import iraniImg from '../assets/images/irani_cafe_berry_pulao_1791176814922.jpg';
+import streetImg from '../assets/images/street_vada_pav_cutting_chai_1791176829807.jpg';
+import bandraImg from '../assets/images/bandra_artisan_cafe_1791176841810.jpg';
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
@@ -15,7 +19,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       name: 'Rustom Contractor',
       title: 'Heritage Chronicler & Food Historian',
     },
-    heroImage: '/src/assets/images/irani_cafe_berry_pulao_1791176814922.jpg',
+    heroImage: iraniImg,
     heroImageCaption: 'A steaming bowl of Parsi Berry Pulao with saffron rice, caramelized onions, and tart Iranian barberries at Ballard Estate.',
     overview: 'In the golden late afternoon light of South Bombay, tall French windows cast diagonal shadows across distressed mirrors and bentwood Thonet chairs. The unmistakable clatter of ceramic saucers against Italian marble tables heralds the century-old ritual of dipping crusty Brun Pav into piping hot, cardamom-scented chai.',
     dropCapInitial: 'T',
@@ -141,7 +145,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       name: 'Tanvi Shinde',
       title: 'Culinary Anthropologist & Maharashtrian Food Specialist',
     },
-    heroImage: '/src/assets/images/street_vada_pav_cutting_chai_1791176829807.jpg',
+    heroImage: streetImg,
     heroImageCaption: 'Golden mustard-tempered batata vadas sizzling in a cast-iron kadai, stuffed into soft ladi pav with dry garlic coconut chutney.',
     overview: 'Invented in 1966 by Ashok Vaidya outside Dadar Station to feed mill workers hurrying into textile factories, the Vada Pav is more than street snackery — it is the heartbeat of Mumbai.',
     dropCapInitial: 'I',
@@ -268,7 +272,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       name: 'Farhan Merchant',
       title: 'Nocturnal Food Essayist & Bombay Native',
     },
-    heroImage: '/src/assets/images/hero_mumbai_food_trail_1791176802606.jpg',
+    heroImage: heroImg,
     heroImageCaption: 'Midnight lanterns and smoking sigdis along the bustling lanes of Minara Masjid and Bohri Mohalla.',
     overview: 'As midnight approaches and the rest of Bombay slows down, the narrow alleyways flanking Minara Masjid awaken into an intoxicating carnival of smoke, saffron, and sizzling fat. Spices ground fresh on heavy stone sil-battas perfume the night air.',
     dropCapInitial: 'A',
@@ -396,7 +400,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       name: 'Maya D’Souza',
       title: 'Bandra Local & Specialty Coffee Roaster',
     },
-    heroImage: '/src/assets/images/bandra_artisan_cafe_1791176841810.jpg',
+    heroImage: bandraImg,
     heroImageCaption: 'A quiet morning table at Ranwar Village with pour-over coffee, house-baked sourdough toast, and tropical sunlight through French wooden shutters.',
     overview: 'In the narrow, winding alleys of Ranwar and Chuim villages, Portuguese-style wooden cottages with ornate wrought-iron balconies stand shoulder-to-shoulder with independent specialty micro-roasteries and sourdough bakehouses.',
     dropCapInitial: 'B',
@@ -509,7 +513,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       name: 'Chef Nilesh Kadam',
       title: 'Konkan Coast Seafood Specialist',
     },
-    heroImage: '/src/assets/images/hero_mumbai_food_trail_1791176802606.jpg',
+    heroImage: heroImg,
     heroImageCaption: 'Golden rava-crusted Bombay Duck (Bombil) and Surmai kingfish steaks served with a bowl of cooling pink Sol Kadhi.',
     overview: 'Before Bombay was seven connected islands paved with asphalt, it belonged to the Koli fishing community. The sea remains the city’s lifeblood, yielding fresh catches that are coated in coarse semolina (rava), spiced with red Byadgi chillies, and fried to golden perfection.',
     dropCapInitial: 'T',
@@ -622,7 +626,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       name: 'Venkatesh Iyer',
       title: 'Matunga Resident & Culinary Archivist',
     },
-    heroImage: '/src/assets/images/hero_mumbai_food_trail_1791176802606.jpg',
+    heroImage: heroImg,
     heroImageCaption: 'Frothy South Indian filter kaapi poured from a brass dabarah tumbler alongside a golden Mysore Masala Dosa.',
     overview: 'As early as 5:45 AM, while the rest of the metropolis is wrapped in silence, the quiet residential avenues of Matunga Central — shaded by old rain trees and fragrant with jasmine garlands outside the temples — hum with eager breakfast walkers.',
     dropCapInitial: 'A',
@@ -735,7 +739,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       name: 'Rustom Contractor',
       title: 'Heritage Chronicler & Food Historian',
     },
-    heroImage: '/src/assets/images/irani_cafe_berry_pulao_1791176814922.jpg',
+    heroImage: iraniImg,
     heroImageCaption: 'Warm cardamom Mava Cakes fresh from the morning bake, served alongside Darjeeling tea and crunchy cheese biscuits.',
     overview: 'Dadar Parsi Colony is the largest Zoroastrian enclave in the world — an oasis of peace with over a hundred low-slung Art Deco bungalows, leafy avenues, and fragrant gardens where baking has been an art form for well over a century.',
     dropCapInitial: 'T',
@@ -834,7 +838,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       name: 'Tanvi Shinde',
       title: 'Culinary Anthropologist & Maharashtrian Food Specialist',
     },
-    heroImage: '/src/assets/images/street_vada_pav_cutting_chai_1791176829807.jpg',
+    heroImage: streetImg,
     heroImageCaption: 'A street vendor preparing fusion butter dosas and crispy Khichiya Papads loaded with shredded Amul cheese and spicy chutneys.',
     overview: 'In Mumbai street parlance, a "Khau Galli" literally translates to "Eating Alley". No neighborhoods represent the sheer ingenuity and delicious madness of street food better than the diamond-merchant hub of Zaveri Bazaar and the culinary haven of Ghatkopar East.',
     dropCapInitial: 'W',
@@ -946,7 +950,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       name: 'Farhan Merchant',
       title: 'Nocturnal Food Essayist & Bombay Native',
     },
-    heroImage: '/src/assets/images/hero_mumbai_food_trail_1791176802606.jpg',
+    heroImage: heroImg,
     heroImageCaption: 'Evening falling along the promenade as steaming glasses of ginger cutting chai meet spicy street rolls.',
     overview: 'There is a sacred rhythm to a Mumbai evening: you begin by leaning against the tetrapods of Marine Drive as the sun dips into the Arabian Sea, holding a paper cup of ginger cutting chai, and you conclude hours later in the dim alleys of Colaba tearing into a crispy Baida Roti.',
     dropCapInitial: 'N',
@@ -1058,7 +1062,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       name: 'Chef Nilesh Kadam',
       title: 'Konkan Coast Seafood & Confectionery Specialist',
     },
-    heroImage: '/src/assets/images/hero_mumbai_food_trail_1791176802606.jpg',
+    heroImage: heroImg,
     heroImageCaption: 'Artisanal slices of Parsi Malai Kulfi, ruby-colored Karachi Halwa, and royal vermicelli Falooda at Crawford Market.',
     overview: 'Behind the Gothic stone arches and bas-reliefs carved by Lockwood Kipling at Crawford Market lies a sweet-toothed trail spanning over a century of confectionary brilliance — from dense buffalo milk kulfis to shimmering translucent cornstarch halwas.',
     dropCapInitial: 'T',
