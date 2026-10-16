@@ -1,6 +1,7 @@
 import React from 'react';
 import { X, Bookmark, Trash2, ArrowRight, Printer, MapPin, Clock } from 'lucide-react';
 import { BlogArticle } from '../types/blog';
+import { Link } from '../utils/router';
 
 interface SavedTrailsDrawerProps {
   isOpen: boolean;
@@ -125,16 +126,14 @@ export const SavedTrailsDrawer: React.FC<SavedTrailsDrawerProps> = ({
                     <span className="text-[11px] font-mono text-[#78716C]">
                       {article.trailMetrics.suggestedPacing.split('(')[0]}
                     </span>
-                    <button
-                      onClick={() => {
-                        onSelectArticle(article);
-                        onClose();
-                      }}
+                    <Link
+                      href={`/${article.slug}`}
+                      onClick={onClose}
                       className="cursor-pointer text-xs font-semibold text-[#9A3412] flex items-center gap-1 hover:underline"
                     >
                       <span>Open Guide</span>
                       <ArrowRight className="w-3 h-3" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               ))

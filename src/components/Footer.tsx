@@ -1,17 +1,8 @@
 import React, { useState } from 'react';
 import { ArrowUp, Train, Check } from 'lucide-react';
+import { Link } from '../utils/router';
 
-interface FooterProps {
-  onSelectCategory: (cat: string) => void;
-  onOpenGlossary: () => void;
-  onOpenMap: () => void;
-}
-
-export const Footer: React.FC<FooterProps> = ({
-  onSelectCategory,
-  onOpenGlossary,
-  onOpenMap,
-}) => {
+export const Footer: React.FC = () => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
@@ -35,9 +26,9 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-[#332F2C]">
           {/* Brand & Editorial Mission (5 cols) */}
           <div className="md:col-span-5">
-            <span className="font-serif text-2xl font-bold tracking-tight text-white">
+            <Link href="/" className="font-serif text-2xl font-bold tracking-tight text-white hover:text-[#F97316] transition-colors">
               Bombay Flavours
-            </span>
+            </Link>
             <p className="mt-3 text-xs sm:text-sm text-[#A8A29E] leading-relaxed max-w-sm">
               An independent gazette chronicling Mumbai’s endangered Irani cafés, century-old street gallis, and coastal culinary sanctuaries. Built with archival devotion to the city that never stops eating.
             </p>
@@ -54,59 +45,59 @@ export const Footer: React.FC<FooterProps> = ({
             </div>
           </div>
 
-          {/* Curated Trail Links (3 cols) */}
+          {/* Curated Trail Links with unique URLs (3 cols) */}
           <div className="md:col-span-3">
             <h4 className="text-xs uppercase tracking-widest font-semibold text-white mb-4">
               Curated Trails
             </h4>
             <ul className="space-y-2.5 text-xs text-[#A8A29E]">
               <li>
-                <button
-                  onClick={() => onSelectCategory('irani')}
-                  className="cursor-pointer hover:text-white transition-colors"
+                <Link
+                  href="/irani-cafes"
+                  className="hover:text-white transition-colors"
                 >
                   Heritage Irani Cafés
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onSelectCategory('street')}
-                  className="cursor-pointer hover:text-white transition-colors"
+                <Link
+                  href="/street-food"
+                  className="hover:text-white transition-colors"
                 >
                   Street Food & Khau Gallis
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onSelectCategory('breakfast')}
-                  className="cursor-pointer hover:text-white transition-colors"
+                <Link
+                  href="/dawn-coffee"
+                  className="hover:text-white transition-colors"
                 >
                   Dawn Filter Kaapi in Matunga
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onSelectCategory('coastal')}
-                  className="cursor-pointer hover:text-white transition-colors"
+                <Link
+                  href="/coastal-seafood"
+                  className="hover:text-white transition-colors"
                 >
                   Konkan Coastal & Koli Feasts
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={onOpenMap}
-                  className="cursor-pointer hover:text-white transition-colors"
+                <Link
+                  href="/trail-map"
+                  className="hover:text-white transition-colors"
                 >
                   Interactive Transit Cartography
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={onOpenGlossary}
-                  className="cursor-pointer hover:text-white transition-colors"
+                <Link
+                  href="/food-glossary"
+                  className="hover:text-white transition-colors"
                 >
                   Street Food Dialect Glossary
-                </button>
+                </Link>
               </li>
             </ul>
           </div>

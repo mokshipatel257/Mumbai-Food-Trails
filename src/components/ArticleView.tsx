@@ -16,6 +16,7 @@ import {
   Utensils
 } from 'lucide-react';
 import { BlogArticle, TrailSpot } from '../types/blog';
+import { Link } from '../utils/router';
 
 interface ArticleViewProps {
   article: BlogArticle;
@@ -87,13 +88,13 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
       {/* Sub-header Navigation Bar */}
       <div className="sticky top-18 z-30 bg-[#FAF7F2]/95 backdrop-blur-md border-b border-[#E6DFD5] py-3 no-print">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-          <button
-            onClick={onBack}
+          <Link
+            href="/"
             className="cursor-pointer inline-flex items-center gap-2 text-xs font-semibold text-[#57534E] hover:text-[#9A3412] transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to All Trails</span>
-          </button>
+          </Link>
 
           <div className="flex items-center gap-3">
             {/* Atmospheric Soundscape Player Toggle */}
@@ -475,16 +476,13 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
               Next trail in {nextArticle.neighborhood} · {nextArticle.readTime}
             </p>
           </div>
-          <button
-            onClick={() => {
-              onSelectArticle(nextArticle);
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
+          <Link
+            href={`/${nextArticle.slug}`}
             className="cursor-pointer inline-flex items-center gap-2 px-5 py-2.5 text-xs font-semibold text-white bg-[#9A3412] hover:bg-[#7C2D12] rounded-lg transition-colors whitespace-nowrap shadow-xs"
           >
             <span>Read Next Trail</span>
             <ArrowRight className="w-4 h-4" />
-          </button>
+          </Link>
         </div>
       </div>
     </article>

@@ -132,8 +132,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     featured: true
   },
   {
-    id: 'sacred-vada-pav-cartography',
-    slug: 'sacred-vada-pav-cartography',
+    id: 'vada-pav-trail',
+    slug: 'vada-pav-trail',
     title: 'The Sacred Vada Pav Cartography: 6 Legendary Stalls from Dadar to CST',
     subtitle: 'Tracing the spine of Mumbai’s quintessential working-class fuel through boiling oil and fiery garlic thecha.',
     kicker: 'Street Food Epics',
@@ -259,8 +259,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     tags: ['Street Food', 'Dadar', 'Vada Pav', 'Vegetarian', 'Budget Eats']
   },
   {
-    id: 'midnight-mohammed-ali-road',
-    slug: 'midnight-mohammed-ali-road',
+    id: 'mohammed-ali-road',
+    slug: 'mohammed-ali-road',
     title: 'Midnight at Mohammed Ali Road & Bohri Mohalla: Kebabs, Sanju Baba Chicken & Mawa Jalebis',
     subtitle: 'Navigating the sensory whirlwind of smoky charcoal grills, rich nalli niharis, and molten sweets under the nocturnal skyline.',
     kicker: 'Nocturnal Feasts',
@@ -387,8 +387,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     tags: ['Street Food', 'Midnight Feasts', 'Kebabs', 'Desserts', 'Bhendi Bazaar']
   },
   {
-    id: 'bandra-bohemian-cafes',
-    slug: 'bandra-bohemian-cafes',
+    id: 'bandra-cafes',
+    slug: 'bandra-cafes',
     title: 'Bandra’s Bohemian Café Walk: Portuguese Villages, Cold Brews & Goan Choriz Pao',
     subtitle: 'Strolling past bougainvillea-draped heritage bungalows into India’s artisanal coffee capital.',
     kicker: 'Artisan & Contemporary Cafés',
@@ -500,8 +500,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     tags: ['Specialty Coffee', 'Bandra', 'Artisan Bakery', 'Brunch', 'Heritage Cottages']
   },
   {
-    id: 'coastal-mumbai-koli-feasts',
-    slug: 'coastal-mumbai-koli-feasts',
+    id: 'coastal-koli-feasts',
+    slug: 'coastal-koli-feasts',
     title: 'Coastal Mumbai & Koli Feasts: Surmai Rava Fry, Bombil & Sol Kadhi',
     subtitle: 'From dawn fish landings at Sassoon Docks to Malvani and Mangalorean tawa-fried ocean jewels.',
     kicker: 'Coastal & Seafood Trails',
@@ -613,8 +613,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     tags: ['Seafood', 'Coastal Cuisine', 'Konkan', 'Dadar', 'Kala Ghoda']
   },
   {
-    id: 'matunga-south-indian-coffee-dawn',
-    slug: 'matunga-south-indian-coffee-dawn',
+    id: 'matunga-coffee-dawn',
+    slug: 'matunga-coffee-dawn',
     title: 'Matunga’s South Indian Coffee Dawn: Filter Kaapi, Benne Dosa & Mysore Pak at 6 AM',
     subtitle: 'Where Mumbai wakes up before dawn for foamy brass-tumbler degree coffee and fluffy idlis.',
     kicker: 'Morning Rituals',
@@ -726,8 +726,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     tags: ['Breakfast', 'South Indian', 'Filter Coffee', 'Vegetarian', 'Heritage']
   },
   {
-    id: 'dadar-parsi-colony-bakeries',
-    slug: 'dadar-parsi-colony-bakeries',
+    id: 'parsi-colony-bakeries',
+    slug: 'parsi-colony-bakeries',
     title: 'Dadar Parsi Colony & Old Bakeries: Mava Cakes, Dhansak and Hundred-Year Ovens',
     subtitle: 'Wandering tree-lined art deco enclaves for warm walnut puddings, chicken pattice, and vintage glass jars.',
     kicker: 'Hidden Heritage Enclaves',
@@ -825,8 +825,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     tags: ['Bakeries', 'Parsi Cuisine', 'Heritage', 'Dadar', 'Sweets']
   },
   {
-    id: 'ghatkopar-zaveri-bazaar-khau-galli',
-    slug: 'ghatkopar-zaveri-bazaar-khau-galli',
+    id: 'ghatkopar-khau-galli',
+    slug: 'ghatkopar-khau-galli',
     title: 'The Hidden Khau Gallis of Ghatkopar & Zaveri Bazaar: 100-Cheese Dosas & Ice-Cream Sev Puris',
     subtitle: 'Diving into Mumbai’s most inventive vegetarian street food alleys where gold jewelry trade meets melted cheese.',
     kicker: 'Street Food Epics',
@@ -937,8 +937,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     tags: ['Street Food', 'Vegetarian', 'Khau Galli', 'Ghatkopar', 'Zaveri Bazaar']
   },
   {
-    id: 'marine-drive-sunset-midnight-rolls',
-    slug: 'marine-drive-sunset-midnight-rolls',
+    id: 'marine-drive-sunset',
+    slug: 'marine-drive-sunset',
     title: 'Marine Drive Sunset to Colaba Twilight: Cutting Chai, Baida Roti & Spiced Ice Creams',
     subtitle: 'From watching the Queen’s Necklace ignite at dusk to devouring crisp paratha rolls at 1 AM.',
     kicker: 'Twilight & Waterfront Feats',
@@ -1049,8 +1049,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     tags: ['Waterfront', 'Marine Drive', 'Midnight Feasts', 'Desserts', 'Colaba']
   },
   {
-    id: 'heritage-sweetmakers-crawford-market',
-    slug: 'heritage-sweetmakers-crawford-market',
+    id: 'heritage-sweetmakers',
+    slug: 'heritage-sweetmakers',
     title: 'Heritage Sweetmakers & Crawford Market Confectioners: Kulfi, Karachi Halwa & Royal Malai',
     subtitle: 'Unearthing 130-year-old confectionery dynasties nestled inside colonial stone arcades.',
     kicker: 'Heritage Sweetmakers',

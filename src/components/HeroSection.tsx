@@ -1,20 +1,13 @@
 import React from 'react';
 import { ArrowUpRight, Clock, MapPin, Sparkles } from 'lucide-react';
 import { BlogArticle } from '../types/blog';
+import { Link } from '../utils/router';
 
 interface HeroSectionProps {
   featuredArticle: BlogArticle;
-  onSelectArticle: (article: BlogArticle) => void;
-  onExploreMap: () => void;
-  onOpenGlossary: () => void;
 }
 
-export const HeroSection: React.FC<HeroSectionProps> = ({
-  featuredArticle,
-  onSelectArticle,
-  onExploreMap,
-  onOpenGlossary,
-}) => {
+export const HeroSection: React.FC<HeroSectionProps> = ({ featuredArticle }) => {
   return (
     <section className="relative border-b border-[#E6DFD5] bg-[#F7F3EC] overflow-hidden">
       {/* Editorial Gazette Dispatch Header */}
@@ -42,34 +35,34 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* Quick utility jump bar */}
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <button
-              onClick={() => onSelectArticle(featuredArticle)}
+            <Link
+              href={`/${featuredArticle.slug}`}
               className="cursor-pointer inline-flex items-center gap-2 px-5 py-2.5 text-xs font-semibold text-white bg-[#9A3412] hover:bg-[#7C2D12] rounded-lg transition-colors shadow-xs"
             >
               <span>Read Featured Trail</span>
               <ArrowUpRight className="w-4 h-4" />
-            </button>
-            <button
-              onClick={onExploreMap}
+            </Link>
+            <Link
+              href="/trail-map"
               className="cursor-pointer inline-flex items-center gap-2 px-4 py-2.5 text-xs font-medium text-[#1F1D1B] bg-white border border-[#DDD5C7] hover:border-[#9A3412] rounded-lg transition-colors"
             >
               <MapPin className="w-3.5 h-3.5 text-[#9A3412]" />
               <span>Interactive Transit Map</span>
-            </button>
-            <button
-              onClick={onOpenGlossary}
+            </Link>
+            <Link
+              href="/food-glossary"
               className="cursor-pointer inline-flex items-center gap-2 px-4 py-2.5 text-xs font-medium text-[#57534E] hover:text-[#1F1D1B] transition-colors"
             >
               <Sparkles className="w-3.5 h-3.5 text-[#B45309]" />
               <span>Street Food Lexicon</span>
-            </button>
+            </Link>
           </div>
         </div>
 
         {/* Featured Story Marquee Banner */}
         <div className="pb-10">
-          <div
-            onClick={() => onSelectArticle(featuredArticle)}
+          <Link
+            href={`/${featuredArticle.slug}`}
             className="group cursor-pointer block bg-white rounded-xl border border-[#E6DFD5] overflow-hidden hover:border-[#9A3412]/50 hover:shadow-md transition-all duration-200"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
@@ -129,7 +122,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

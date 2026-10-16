@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Train, ArrowRight, Compass, Clock, Utensils } from 'lucide-react';
 import { BlogArticle } from '../types/blog';
+import { Link } from '../utils/router';
 
 interface InteractiveTrailMapProps {
   articles: BlogArticle[];
@@ -37,7 +38,7 @@ const MAP_NODES: MapNode[] = [
     id: 'marine-drive',
     name: 'Marine Drive & Chowpatty',
     marathiName: 'मरीन ड्राईव्ह / गिरगाव चौपाटी',
-    articleId: 'marine-drive-sunset-midnight-rolls',
+    articleId: 'marine-drive-sunset',
     line: 'Western',
     topPercent: 83,
     leftPercent: 28,
@@ -49,7 +50,7 @@ const MAP_NODES: MapNode[] = [
     id: 'crawford-market',
     name: 'Crawford Market & Marine Lines',
     marathiName: 'क्रॉफर्ड मार्केट / मरीन लाइन्स',
-    articleId: 'heritage-sweetmakers-crawford-market',
+    articleId: 'heritage-sweetmakers',
     line: 'Western',
     topPercent: 82,
     leftPercent: 52,
@@ -61,7 +62,7 @@ const MAP_NODES: MapNode[] = [
     id: 'bhendi-bazaar',
     name: 'Mohammed Ali Rd & Bohri Mohalla',
     marathiName: 'मोहम्मद अली रोड / भेंडी बाजार',
-    articleId: 'midnight-mohammed-ali-road',
+    articleId: 'mohammed-ali-road',
     line: 'Central',
     topPercent: 77,
     leftPercent: 58,
@@ -73,7 +74,7 @@ const MAP_NODES: MapNode[] = [
     id: 'dadar-west',
     name: 'Dadar West & Kirti College',
     marathiName: 'दादर पश्चिम / कीर्ती कॉलेज',
-    articleId: 'sacred-vada-pav-cartography',
+    articleId: 'vada-pav-trail',
     line: 'Western',
     topPercent: 62,
     leftPercent: 36,
@@ -85,7 +86,7 @@ const MAP_NODES: MapNode[] = [
     id: 'dadar-parsi-colony',
     name: 'Dadar Parsi Colony & Grant Rd',
     marathiName: 'दादर पारसी कॉलनी',
-    articleId: 'dadar-parsi-colony-bakeries',
+    articleId: 'parsi-colony-bakeries',
     line: 'Central',
     topPercent: 58,
     leftPercent: 54,
@@ -97,7 +98,7 @@ const MAP_NODES: MapNode[] = [
     id: 'matunga-kings-circle',
     name: 'Matunga & King’s Circle',
     marathiName: 'माटुंगा / किंग्स सर्कल',
-    articleId: 'matunga-south-indian-coffee-dawn',
+    articleId: 'matunga-coffee-dawn',
     line: 'Central',
     topPercent: 52,
     leftPercent: 60,
@@ -109,7 +110,7 @@ const MAP_NODES: MapNode[] = [
     id: 'bandra-ranwar',
     name: 'Bandra West (Ranwar Village)',
     marathiName: 'वांद्रे पश्चिम / रानवार गाव',
-    articleId: 'bandra-bohemian-cafes',
+    articleId: 'bandra-cafes',
     line: 'Western',
     topPercent: 42,
     leftPercent: 30,
@@ -121,7 +122,7 @@ const MAP_NODES: MapNode[] = [
     id: 'vile-parle-coastal',
     name: 'Kala Ghoda to Vile Parle Coast',
     marathiName: 'विलेपार्ले आणि किनारपट्टी',
-    articleId: 'coastal-mumbai-koli-feasts',
+    articleId: 'coastal-koli-feasts',
     line: 'Coastal',
     topPercent: 32,
     leftPercent: 25,
@@ -133,7 +134,7 @@ const MAP_NODES: MapNode[] = [
     id: 'ghatkopar-khau-galli',
     name: 'Ghatkopar East Khau Galli',
     marathiName: 'घाटकोपर खाऊ गल्ली',
-    articleId: 'ghatkopar-zaveri-bazaar-khau-galli',
+    articleId: 'ghatkopar-khau-galli',
     line: 'Central',
     topPercent: 24,
     leftPercent: 72,
@@ -324,13 +325,13 @@ export const InteractiveTrailMap: React.FC<InteractiveTrailMapProps> = ({
 
           <div className="mt-6 pt-4 border-t border-[#E6DFD5]">
             {matchingArticle ? (
-              <button
-                onClick={() => onSelectArticle(matchingArticle)}
+              <Link
+                href={`/${matchingArticle.slug}`}
                 className="cursor-pointer w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold text-white bg-[#9A3412] hover:bg-[#7C2D12] rounded-lg transition-colors shadow-xs"
               >
                 <span>Read Full Trail Dispatch</span>
                 <ArrowRight className="w-3.5 h-3.5" />
-              </button>
+              </Link>
             ) : null}
           </div>
         </div>

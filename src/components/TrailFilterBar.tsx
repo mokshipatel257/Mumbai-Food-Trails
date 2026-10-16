@@ -1,12 +1,11 @@
 import React from 'react';
 import { Search, X } from 'lucide-react';
-import { Region } from '../types/blog';
+import { Link } from '../utils/router';
 
 interface TrailFilterBarProps {
   searchQuery: string;
   setSearchQuery: (query: string) => void;
   selectedCategory: string;
-  setSelectedCategory: (category: string) => void;
   selectedRegion: string;
   setSelectedRegion: (region: string) => void;
   matchingCount: number;
@@ -14,12 +13,12 @@ interface TrailFilterBarProps {
 }
 
 const CATEGORIES = [
-  { id: 'all', label: 'All Trails' },
-  { id: 'irani', label: 'Irani Cafés & Heritage' },
-  { id: 'street', label: 'Street Food & Khau Gallis' },
-  { id: 'breakfast', label: 'Dawn Coffee & Breakfast' },
-  { id: 'coastal', label: 'Coastal Seafood' },
-  { id: 'bakes', label: 'Bakes & Sweets' },
+  { id: 'all', href: '/', label: 'All Trails' },
+  { id: 'irani', href: '/irani-cafes', label: 'Irani Cafés & Heritage' },
+  { id: 'street', href: '/street-food', label: 'Street Food & Khau Gallis' },
+  { id: 'breakfast', href: '/dawn-coffee', label: 'Dawn Coffee & Breakfast' },
+  { id: 'coastal', href: '/coastal-seafood', label: 'Coastal Seafood' },
+  { id: 'bakes', href: '/heritage-bakes', label: 'Bakes & Sweets' },
 ];
 
 const REGIONS: Array<{ id: string; label: string }> = [
@@ -35,7 +34,6 @@ export const TrailFilterBar: React.FC<TrailFilterBarProps> = ({
   searchQuery,
   setSearchQuery,
   selectedCategory,
-  setSelectedCategory,
   selectedRegion,
   setSelectedRegion,
   matchingCount,
@@ -71,15 +69,15 @@ export const TrailFilterBar: React.FC<TrailFilterBarProps> = ({
         </div>
       </div>
 
-      {/* Category Segmented Filter Buttons */}
+      {/* Category Segmented Filter Buttons with unique URLs */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-2">
         <div className="flex items-center gap-1 overflow-x-auto pb-1 scrollbar-none">
           {CATEGORIES.map((cat) => {
             const isActive = selectedCategory === cat.id;
             return (
-              <button
+              <Link
                 key={cat.id}
-                onClick={() => setSelectedCategory(cat.id)}
+                href={cat.href}
                 className={`cursor-pointer whitespace-nowrap px-3.5 py-1.5 text-xs font-medium rounded-lg transition-colors shrink-0 ${
                   isActive
                     ? 'bg-[#1F1D1B] text-white shadow-2xs'
@@ -87,7 +85,7 @@ export const TrailFilterBar: React.FC<TrailFilterBarProps> = ({
                 }`}
               >
                 {cat.label}
-              </button>
+              </Link>
             );
           })}
         </div>
