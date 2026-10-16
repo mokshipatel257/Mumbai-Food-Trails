@@ -20,7 +20,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
       <Link href={`/${article.slug}`} className="block relative aspect-[4/3] w-full overflow-hidden bg-[#EFE9DF]">
         <img
           src={article.heroImage}
-          alt={article.title}
+          alt={article.imageAlt || article.heroImageCaption || article.title}
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
           onError={(e) => {

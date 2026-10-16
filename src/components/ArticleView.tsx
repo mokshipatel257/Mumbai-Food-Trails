@@ -212,7 +212,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
           <div className="relative aspect-[16/9] w-full">
             <img
               src={article.heroImage}
-              alt={article.title}
+              alt={article.imageAlt || article.heroImageCaption || article.title}
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
             />

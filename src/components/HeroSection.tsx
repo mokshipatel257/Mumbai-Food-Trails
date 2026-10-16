@@ -69,7 +69,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ featuredArticle }) => 
               <div className="lg:col-span-7 relative h-72 sm:h-96 lg:h-auto overflow-hidden bg-[#EAE4D9]">
                 <img
                   src={featuredArticle.heroImage}
-                  alt={featuredArticle.title}
+                  alt={featuredArticle.imageAlt || featuredArticle.heroImageCaption || featuredArticle.title}
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
                 />

@@ -26,19 +26,9 @@ export interface DishChecklistItem {
 
 export interface ArticleSection {
   heading: string;
-  isQuestion?: boolean;
-  directAnswer?: string;
   paragraphs: string[];
   pullQuote?: string;
   highlights?: string[];
-}
-
-export interface ArticleSEO {
-  mainKeyword: string;
-  relatedKeywords: [string, string];
-  metaTitle: string;
-  metaDescription: string;
-  imageAlt: string;
 }
 
 export interface AudioAtmosphere {
@@ -63,10 +53,10 @@ export interface BlogArticle {
   };
   heroImage: string;
   heroImageCaption: string;
+  imageAlt?: string;
   overview: string;
   dropCapInitial: string;
   sections: ArticleSection[];
-  seo: ArticleSEO;
   spots: TrailSpot[];
   trailMetrics: {
     totalSpots: number;
